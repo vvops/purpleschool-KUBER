@@ -1,0 +1,34 @@
+user:
+  admin: true
+  name: Vova
+  age: 33
+  post: Инжинер сопровождения
+  skills:
+    - name: dev
+      level: 2
+      description: |
+        пишу скримты развертывания сервисов(ansible-playbook)
+        односточные скрипты на bash
+        изучаю pyhton
+    - name: support
+      level: 4
+      description: |
+        сопровождение викросервисных систем 
+        развертывание серверов для нужд разработки
+        поддержка пользователей
+  residency:
+    country: russia
+    city: Moscow
+    street: Pupkina
+  Pets:
+    - type: dog 
+      breed: mops
+      age: 10
+      whoop: true
+    - type: cat
+      breed: street-cat
+      age: 13  
+      whoop: true
+    
+
+      
