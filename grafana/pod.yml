@@ -1,16 +1,17 @@
 apiVersion: v1
 kind: Pod
-metadata:
-  name: short-app
+matadata:
+  name: test-work_grafana
   labels:
-    components: frontend
+    component: grafana-app
 spec:
   containers:
-    - name: short-app
+    - name: grafana
       image: ghcr.io/vvops/test-work/test-work_grafana:v2
       ports:
         - containerPort: 3000
       resources:
         limits:
-          memory: "2000Mi"
-          cpu: "2"
+          memory: '1000'
+          cpu: '1'
+
