@@ -12,13 +12,13 @@ spec:
       labels:
         component: front
     spec:
-      container:
+      containers:
         - name: front
-          images: antonlarichev/conv-app:1.2
+          image: antonlarichev/conv-app:1.2
           ports:
             - containerPort: 80
           resources:
             limits:
-              memory: "128Mi"
-              cpu: "300m"
-              ephemeral-storage: "2Gi"
+              memory: "666Mi"
+              cpu: "500m"
+              ephemeral-storage: "3Gi"
