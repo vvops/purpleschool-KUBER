@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-nginx
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      component: t-nginx
+  template:
+    metadata:
+      labels:
+        component: t-nginx
+    spec:
+      containers:
+        - name: my-nginx
+          image: nginx
+          ports:
+            - containerPort: 80
+          resources:
+            limits:
+              memory: "1Gi"
+              cpu: "200m"
+            requaest:
+              memory: "300Mi"
+              cpu: "100m"
+            ephemeral-storage: "3Gi"

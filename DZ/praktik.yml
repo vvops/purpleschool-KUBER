@@ -1,0 +1,30 @@
+name: Vasia
+age: 30
+
+version: 30
+
+# Масивы обозначаются хешом 
+user:
+- name: Vasia
+  age: 30
+- name: Viva
+  age: 20
+
+
+users:
+- name: Vasia
+  age: 30
+- name: mash
+  age: 24
+
+
+
+multilane: |
+  строки будут считываться 
+  последовательно одна за другой
+
+singleline: >
+  сколько бы я не писал
+  строки будут восприниматься
+  в одну строку 
+

@@ -1,0 +1,28 @@
+apiVersion:
+kind: Deployment
+metadata:
+  name: test1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      compo: nginx
+  template:
+    metadata:
+      labels:
+        compo: nginx
+    spec:
+      containers:
+        - name: nginx
+          images: nginx
+          imagePullPolicy: IfNotPresent
+          Ports:
+            - conatinerPort: 80
+          resources:
+            limits:
+              memory: "3Gi"
+              cpu: "200m"
+            requaes:
+              memory: "1Gi"
+              cpu: "100m"
+            ephemeral-storage: "3Gi"
